@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://translation-management-tool.onrender.com' });
+const API = axios.create({ baseURL: 'https://translation-management-tool.onrender.com/api' });
 
 export const createTranslation = (payload) => API.post('/translations', payload);
 export const autogenTranslation = (payload) => API.post('/translations/autogen', payload);
